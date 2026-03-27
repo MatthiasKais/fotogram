@@ -1,8 +1,18 @@
 
+/* Figtree-800 ExtraBold */
 @font-face {
     font-display: swap; /* Improve web-performace by forcing the browser to immediately change the font*/
     font-family: "Figtree";
     font-style: ExtraBold;
     font-weight: 800;
     src: url("../src/Figtree/Figtree-ExtraBold.ttf") format("woff2"); /* woff2 is used to compromise the size and therefore gurante a faster webperformance  */
+}
+
+/* Figtree-400 ExtraBold */
+@font-face {
+    font-display: swap; /* Improve web-performace by forcing the browser to immediately change the font*/
+    font-family: "Figtree";
+    font-style: Regular;
+    font-weight: 400;
+    src: url("../src/Figtree/Figtree-Regular.ttf") format("woff2");
 }
