@@ -1,0 +1,8 @@
+
+@font-face {
+    font-display: swap; /* Improve web-performace by forcing the browser to immediately change the font*/
+    font-family: "Inter";
+    font-style: light;
+    font-weight: 18;
+    src: url(../src/Inter/static/Inter_18pt-Light.ttf) format("woff2"); /* woff2 is used to compromise the size and therefore gurante a faster webperformance  */
+}
