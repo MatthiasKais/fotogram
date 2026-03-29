@@ -1,4 +1,7 @@
 header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   height: 81px;
   background-color: var(--midnight-blue);
 }
@@ -31,33 +34,38 @@ footer {
   height: 128px;
   background-color: var(--midnight-blue);
   border-radius:
-    /* Horizontale Radien (oben links, oben rechts, unten rechts, unten links) */
-    var(--border-radius-A) var(--border-radius-B)
-    var(--border-radius-C) var(--border-radius-D)
-    /
+    /* Horizontale Radien (oben links, oben rechts, unten rechts, unten links) */ var(
+      --border-radius-A
+    )
+    var(--border-radius-B) var(--border-radius-C) var(--border-radius-D) /
     /* Vertikale Radien (oben links, oben rechts, unten rechts, unten links) */
-    var(--border-radius-E) var(--border-radius-F)
-    var(--border-radius-G) var(--border-radius-H);
+    var(--border-radius-E) var(--border-radius-F) var(--border-radius-G)
+    var(--border-radius-H);
 }
 
-.footer-content{
+.footer-content {
   display: flex;
   align-items: center;
   flex-direction: column;
-
-
 }
 
-.footer-images{
+.footer-images {
   height: 32px;
-
 }
 
-.footer-text{
+.footer-text {
   color: var(--light-grey-blue);
   font-family: var(--font-family);
   font-weight: 400;
   font-size: var(--font-size-xsmall);
 }
 
+.header-content {
+  display: flex;
+  max-width: var(--content-lock);
+  width: 100%;
+}
 
+.header-content img {
+  height: 41px;
+}
