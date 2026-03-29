@@ -1,5 +1,5 @@
 header {
-  height: 100px;
+  height: 81px;
   background-color: var(--midnight-blue);
 }
 
@@ -11,11 +11,53 @@ main {
   margin-top: 110px;
 }
 
+body {
+  background-color: var(--midnight-dark-blue);
+}
+
+h1 {
+  color: var(--white);
+  font-family: var(--font-family);
+  font-weight: 800;
+  font-size: var(--font-size-xxlarge);
+}
+
 footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 200px;
+  height: 128px;
   background-color: var(--midnight-blue);
+  border-radius:
+    /* Horizontale Radien (oben links, oben rechts, unten rechts, unten links) */
+    var(--border-radius-A) var(--border-radius-B)
+    var(--border-radius-C) var(--border-radius-D)
+    /
+    /* Vertikale Radien (oben links, oben rechts, unten rechts, unten links) */
+    var(--border-radius-E) var(--border-radius-F)
+    var(--border-radius-G) var(--border-radius-H);
 }
+
+.footer-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+
+}
+
+.footer-images{
+  height: 32px;
+
+}
+
+.footer-text{
+  color: var(--light-grey-blue);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: var(--font-size-xsmall);
+}
+
+
