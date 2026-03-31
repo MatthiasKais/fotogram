@@ -6,6 +6,12 @@ header {
   background-color: var(--midnight-blue);
 }
 
+.header-content{
+  margin-top: var(--spacing-medium);
+  margin-bottom: var(--spacing-medium);
+  margin-left: var(--spacing-xxlarge);
+}
+
 main {
   flex: 1;
   display: flex;
@@ -51,6 +57,7 @@ footer {
 
 .footer-images {
   height: 32px;
+  
 }
 
 .footer-text {
