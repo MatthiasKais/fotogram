@@ -22,7 +22,8 @@
   --spacing-medium: 16px;
   --spacing-large: 24px;
   --spacing-xlarge: 32px;
-  --spacing-xxlarge: 56px;
+  --spacing-xxlarge: 40px;
+  --spacing-xxxlarge: 56px;
   --content-lock: 1440px;
 
   /* Border radius variables*/
@@ -35,4 +36,5 @@
   --border-radius-F: 30px;
   --border-radius-G: 0px;
   --border-radius-H: 0px;
+  --border-radius-small: 12px;
 }

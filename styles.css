@@ -2,11 +2,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 81px;
+  height: 80px;
   background-color: var(--midnight-blue);
 }
 
-.header-content{
+.header-content {
   margin-top: var(--spacing-medium);
   margin-bottom: var(--spacing-medium);
   margin-left: var(--spacing-xxlarge);
@@ -40,13 +40,10 @@ footer {
   height: 128px;
   background-color: var(--midnight-blue);
   border-radius:
-    /* Horizontale Radien (oben links, oben rechts, unten rechts, unten links) */ var(
-      --border-radius-A
-    )
-    var(--border-radius-B) var(--border-radius-C) var(--border-radius-D) /
+    /* Horizontale Radien (oben links, oben rechts, unten rechts, unten links) */ 
+    var(--border-radius-A) var(--border-radius-B) var(--border-radius-C) var(--border-radius-D) /
     /* Vertikale Radien (oben links, oben rechts, unten rechts, unten links) */
-    var(--border-radius-E) var(--border-radius-F) var(--border-radius-G)
-    var(--border-radius-H);
+    var(--border-radius-E) var(--border-radius-F) var(--border-radius-G) var(--border-radius-H);
 }
 
 .footer-content {
@@ -57,7 +54,6 @@ footer {
 
 .footer-images {
   height: 32px;
-  
 }
 
 .footer-text {
@@ -74,5 +70,38 @@ footer {
 }
 
 .header-content img {
-  height: 41px;
+  height: 40px;
+}
+
+.article-header-imgs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+h1 {
+  text-align: center;
+}
+
+.section-imgs {
+  margin-top:var(--spacing-xxlarge);
+  margin-bottom:var(--spacing-xxlarge);
+}
+
+.container-imgs{
+  max-width: var(--content-lock);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-large);
+
+}
+
+.single-image{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 200px;
+  border-radius: var(--border-radius-small);
+
 }
