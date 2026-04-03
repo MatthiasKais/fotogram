@@ -41,9 +41,5 @@ function render() {
 
 
 function getNoteTemplate(index){
-    return `    <img class="single-image" src="${myImages[index]}"> `
+    return `    <img class="single-image" src="${myImages[index]}" alt="${myImagesNames[index]}"> `
 }
-
-    // return `    <div class="single_element">
-    //                 <img src="${myImages[index]}">
-    //             </div>`
