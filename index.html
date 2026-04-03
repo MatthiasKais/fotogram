@@ -1,57 +1,55 @@
 <!doctype html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fotogram</title>
 
-    <link rel="stylesheet" href="styles/variables.css" />
-    <link rel="stylesheet" href="styles/standard.css" />
-    <link rel="stylesheet" href="styles/font.css" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="./js/script.js"></script>
-  </head>
-  <body onload="render()">
-    <header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fotogram</title>
+
+  <link rel="stylesheet" href="styles/variables.css" />
+  <link rel="stylesheet" href="styles/standard.css" />
+  <link rel="stylesheet" href="styles/font.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="./js/script.js"></script>
+</head>
+
+<body onload="render()">
+  <header>
+    <div>
+      <div class="header-content">
+        <img src="img/icon_fotogram.png" alt="Fotogram Logo" />
+        <img src="img/text_fotogram.png" alt="Fotogram" />
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article class="article-header-imgs">
+      <header>
+        <h1>Your personal photo album</h1>
+      </header>
+
+      <section class="section-imgs">
+        <div id="content" class="container-imgs"></div>
+      </section>
+
+      <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+      </div>
+
+    </article>
+  </main>
+
+  <footer>
+    <div class="footer-content">
       <div>
-        <div class="header-content">
-          <img src="img/icon_fotogram.png" alt="Fotogram Logo" />
-          <img src="img/text_fotogram.png" alt="Fotogram" />
-        </div>
+        <img class="footer-images" src="img/icon_da.png" alt="Developer Acedemy Logo" />
+        <img class="footer-images" src="img/text_icon_da.png" alt="Developer Acedemy" />
       </div>
-    </header>
+      <p class="footer-text">&copy 2023 Developer Akademie GmbH</p>
+    </div>
+  </footer>
+</body>
 
-    <main>
-      <article class="article-header-imgs">
-        <header>
-          <h1>Your personal photo album</h1>
-        </header>
-
-        <section class="section-imgs">
-          <div id="content" class="container-imgs"></div>
-          <!-- <div onclick="closeDetail()" id="dialog class="d_none">
-
-        </div> -->
-        </section>
-      </article>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <div>
-          <img
-            class="footer-images"
-            src="img/icon_da.png"
-            alt="Developer Acedemy Logo"
-          />
-          <img
-            class="footer-images"
-            src="img/text_icon_da.png"
-            alt="Developer Acedemy"
-          />
-        </div>
-        <p class="footer-text">&copy 2023 Developer Akademie GmbH</p>
-      </div>
-    </footer>
-  </body>
 </html>

@@ -17,18 +17,18 @@ let myImagesNames = [
 
 
 let myImages = [
-    '/img/brightfreak-stockholm-3897532.jpg',
-    '/img/detait-fruit-8773085.jpg',
-    '/img/jackmac34-portugal-3561087.jpg',
-    '/img/jungr-death-valley-2314018.jpg',
-    '/img/loggawiggler-badwater-4546.jpg',
-    '/img/makalu-latvia-3725548.jpg',
-    '/img/manniguttenberger-monument-valley-5499156.jpg',
-    '/img/oljamu-yosemite-8177850.jpg',
-    '/img/qimono-buddha-5410319.jpg',
-    '/img/viarami-traffic-7033509.jpg',
-    '/img/walkerssk-yosemite-valley-2053308.jpg',
-    '/img/salofoto-dog-10187835.jpg',
+    './img/brightfreak-stockholm-3897532.jpg',
+    './img/detait-fruit-8773085.jpg',
+    './img/jackmac34-portugal-3561087.jpg',
+    './img/jungr-death-valley-2314018.jpg',
+    './img/loggawiggler-badwater-4546.jpg',
+    './img/makalu-latvia-3725548.jpg',
+    './img/manniguttenberger-monument-valley-5499156.jpg',
+    './img/oljamu-yosemite-8177850.jpg',
+    './img/qimono-buddha-5410319.jpg',
+    './img/viarami-traffic-7033509.jpg',
+    './img/walkerssk-yosemite-valley-2053308.jpg',
+    './img/salofoto-dog-10187835.jpg',
 ]
 
 
@@ -39,7 +39,28 @@ function render() {
     }
 }
 
-
-function getNoteTemplate(index){
-    return `    <img class="single-image" src="${myImages[index]}" alt="${myImagesNames[index]}"> `
+function getNoteTemplate(index) {
+  return `<img class="single-image" onclick="openModal(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
 }
+
+
+
+function openModal(index) {
+  let modal = document.getElementById("myModal");
+  let modalImg = document.getElementById("modalImage");
+  modal.style.display = "block";
+  modalImg.src = myImages[index];
+  modalImg.alt = myImagesNames[index];
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+window.onclick = function(event) {
+  const modal = document.getElementById("myModal");
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+}
+
