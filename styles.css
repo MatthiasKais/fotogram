@@ -111,4 +111,20 @@ h1 {
 
 }
 
+.dialog-style{
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+}
+
+
+.dialog-img{
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  max-width: 300px;
+}
+
 

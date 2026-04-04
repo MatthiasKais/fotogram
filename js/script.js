@@ -58,7 +58,7 @@ function renderDialog(index){
 }
 
 function getDialogTemplate(index) {
-    return `<img src="${myImages[index]}" alt="${myImagesNames[index]}">`;
+    return `<img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
 }
 
 
