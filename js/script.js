@@ -1,5 +1,3 @@
-
-
 const openImgRef = document.getElementById("openImg");
 
 let myImagesNames = [
@@ -35,6 +33,7 @@ let myImages = [
 function openDialog(index) {
     console.log("Clicked image index:", index);
     openImgRef.showModal();
+    renderDialog(index);
 };
 
 function closeDialog(){
@@ -50,8 +49,18 @@ function render() {
 };
 
 function getNoteTemplate(index) {
-        return `<img class="single-image" onclick="openDialog(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
+    return `<img class="single-image" onclick="openDialog(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
 };
+
+function renderDialog(index){
+    let dialogRef = document.getElementById('dialogContent');
+    dialogRef.innerHTML += getDialogTemplate(index)
+}
+
+function getDialogTemplate(index) {
+    return `<img src="${myImages[index]}" alt="${myImagesNames[index]}">`;
+}
+
 
 
 
