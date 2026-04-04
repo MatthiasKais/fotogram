@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="styles/standard.css" />
   <link rel="stylesheet" href="styles/font.css" />
   <link rel="stylesheet" href="styles.css" />
-  <script src="./js/script.js"></script>
 </head>
 
 <body onload="render()">
@@ -24,7 +23,7 @@
   </header>
 
   <main>
-    <dialog class="article-header-imgs">
+    <article class="article-header-imgs">
       <header>
         <h1>Your personal photo album</h1>
       </header>
@@ -32,7 +31,22 @@
       <section class="section-imgs">
         <div id="content" class="container-imgs"></div>
       </section>
-      
+    </article>
+
+    <dialog id="openImg">
+      <header onclick="closeDialog()">
+        Foto
+      </header>
+
+      <section>
+        <p>Test</p>
+      </section>
+
+      <footer>
+        Fotter test
+      </footer>
+
+
     </dialog>
   </main>
 
@@ -45,6 +59,7 @@
       <p class="footer-text">&copy 2023 Developer Akademie GmbH</p>
     </div>
   </footer>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
