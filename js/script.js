@@ -54,13 +54,22 @@ function getNoteTemplate(index) {
 
 function renderDialog(index){
     let dialogRef = document.getElementById('dialogContent');
-    dialogRef.innerHTML = ""; // Empties the dialog -> Only actal clickedf images is showen in the dialog
-    dialogRef.innerHTML += getDialogTemplate(index)
-    console.log(dialogRef)
+    let dialogImgName = document.getElementById('dialogImgName');
+    dialogRef.innerHTML = ""; // Empties the dialog -> Only actual clicked images is showen in the dialog
+    dialogImgName.innerHTML = "";
+    dialogRef.innerHTML += getDialogTemplateImg(index);
+    dialogImgName.innerHTML += getDialogTemplateImgName(index);
+    console.log(dialogRef);
+    console.log(dialogImgName);
 }
 
-function getDialogTemplate(index) {
+function getDialogTemplateImg(index) {
     return `<img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
+}
+
+function getDialogTemplateImgName(index) {
+    return `<p> ${myImagesNames[index]} </p>`
+
 }
 
 
