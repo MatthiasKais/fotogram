@@ -3,7 +3,7 @@ const openImgRef = document.getElementById("openImg");
 let myImagesNames = [
     'brightfreak-stockholm-3897532.jpg',
     'detait-fruit-8773085.jpg',
-   'jackmac34-portugal-3561087.jpg',
+    'jackmac34-portugal-3561087.jpg',
     'jungr-death-valley-2314018.jpg',
     'loggawiggler-badwater-4546.jpg',
     'makalu-latvia-3725548.jpg',
@@ -54,7 +54,9 @@ function getNoteTemplate(index) {
 
 function renderDialog(index){
     let dialogRef = document.getElementById('dialogContent');
+    dialogRef.innerHTML = ""; // Empties the dialog -> Only actal clickedf images is showen in the dialog
     dialogRef.innerHTML += getDialogTemplate(index)
+    console.log(dialogRef)
 }
 
 function getDialogTemplate(index) {
