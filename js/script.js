@@ -1,18 +1,18 @@
 const openImgRef = document.getElementById("openImg");
 
 let myImagesNames = [
-    'brightfreak-stockholm-3897532.jpg',
-    'detait-fruit-8773085.jpg',
-    'jackmac34-portugal-3561087.jpg',
-    'jungr-death-valley-2314018.jpg',
-    'loggawiggler-badwater-4546.jpg',
-    'makalu-latvia-3725548.jpg',
-    'manniguttenberger-monument-valley-5499156.jpg',
-    'oljamu-yosemite-8177850.jpg',
-    'qimono-buddha-5410319.jpg',
-    'viarami-traffic-7033509.jpg',
-    'walkerssk-yosemite-valley-2053308.jpg',
-    'salofoto-dog-10187835.jpg'
+    'brightfreak-stockholm-3897532',
+    'detait-fruit-8773085',
+    'jackmac34-portugal-3561087',
+    'jungr-death-valley-2314018',
+    'loggawiggler-badwater-4546',
+    'makalu-latvia-3725548',
+    'manniguttenberger-monument-valley-5499156',
+    'oljamu-yosemite-8177850',
+    'qimono-buddha-5410319',
+    'viarami-traffic-7033509',
+    'walkerssk-yosemite-valley-2053308',
+    'salofoto-dog-10187835'
 ];
 
 let myImages = [
@@ -71,7 +71,6 @@ function getDialogTemplateImgName(index) {
     return `<p> ${myImagesNames[index]} </p>`
 
 }
-
 
 
 
