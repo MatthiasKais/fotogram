@@ -61,25 +61,37 @@ function renderDialog(index){
     dialogImgName.innerHTML = "";
     dialogRef.innerHTML += getDialogTemplateImg(index);
     dialogImgName.innerHTML += getDialogTemplateImgName(index);
-}
+};
 
 function getDialogTemplateImg(index) {
     return `<img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
-}
+};
 
 function getDialogTemplateImgName(index) {
     return `<p> ${myImagesNames[index]} </p>`;
 
-}
+};
 
 function filterButtonRight(index) {
     index +=1;
+    if (index > 11)
+        index = 0;
+    else
+        index = index
     currentIndex = index;
     renderDialog(index);
     return currentIndex;
-}
+};
 
-
+function filterButtonLeft(index) {
+    index -=1;
+    if (index < 0)
+        index = 11;
+    else 
+        index = index
+    renderDialog(index);
+    return currentIndex;
+};
 
 
 
