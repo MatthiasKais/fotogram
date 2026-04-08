@@ -1,4 +1,5 @@
 const openImgRef = document.getElementById("openImg");
+let currentIndex = 0; 
 
 let myImagesNames = [
     'brightfreak-stockholm-3897532',
@@ -32,6 +33,7 @@ let myImages = [
 
 function openDialog(index) {
     console.log("Clicked image index:", index);
+    currentIndex = index;
     openImgRef.showModal();
     renderDialog(index);
 };
@@ -59,8 +61,6 @@ function renderDialog(index){
     dialogImgName.innerHTML = "";
     dialogRef.innerHTML += getDialogTemplateImg(index);
     dialogImgName.innerHTML += getDialogTemplateImgName(index);
-    console.log(dialogRef);
-    console.log(dialogImgName);
 }
 
 function getDialogTemplateImg(index) {
@@ -68,9 +68,17 @@ function getDialogTemplateImg(index) {
 }
 
 function getDialogTemplateImgName(index) {
-    return `<p> ${myImagesNames[index]} </p>`
+    return `<p> ${myImagesNames[index]} </p>`;
 
 }
+
+function filterButtonRight(index) {
+    index +=1;
+    currentIndex = index;
+    renderDialog(index);
+    return currentIndex;
+}
+
 
 
 
