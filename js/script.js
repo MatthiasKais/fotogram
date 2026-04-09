@@ -1,5 +1,6 @@
 const openImgRef = document.getElementById("openImg");
-let currentIndex = 0; 
+let currentIndex = 0;
+let imgNumber = 0;
 
 let myImagesNames = [
     'brightfreak-stockholm-3897532',
@@ -32,10 +33,10 @@ let myImages = [
 ];
 
 function openDialog(index) {
-    console.log("Clicked image index:", index);
     currentIndex = index;
     openImgRef.showModal();
     renderDialog(index);
+    displayImgNumber(index);
 };
 
 function closeDialog(){
@@ -73,28 +74,43 @@ function getDialogTemplateImgName(index) {
 };
 
 function filterButtonRight(index) {
-    console.log(index)
     index +=1;
-    console.log(index)
     if (index > 11)
         index = 0;
     else
         index = index
     currentIndex = index;
     renderDialog(index);
-    return currentIndex;
+    displayImgNumber(index);
+    return index;
 };
 
 function filterButtonLeft(index) {
     index -=1;
+
     if (index < 0)
         index = 11;
     else 
         index = index
     currentIndex = index;
     renderDialog(index);
+    displayImgNumber(index);
     return index;
 };
+
+function displayImgNumber(index){
+    index +=1; 
+    let actualImgNumber = document.getElementById('imgNumberOf');
+    actualImgNumber.innerHTML = "";
+    actualImgNumber.innerHTML += getTemplateImgNumber(index);
+
+    
+}
+
+function getTemplateImgNumber(index){
+    return `<p> ${index}/12 </p>`
+
+}
 
 
 

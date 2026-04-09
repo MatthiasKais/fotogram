@@ -3,7 +3,7 @@ header {
   align-items: center;
   justify-content: flex-start;
   height: 80px;
-  background-color: var(--midnight-blue-dark);
+  background-color: var(--midnight-blue);
 }
 
 .header-content {
