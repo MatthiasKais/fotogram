@@ -73,7 +73,9 @@ function getDialogTemplateImgName(index) {
 };
 
 function filterButtonRight(index) {
+    console.log(index)
     index +=1;
+    console.log(index)
     if (index > 11)
         index = 0;
     else
@@ -89,8 +91,9 @@ function filterButtonLeft(index) {
         index = 11;
     else 
         index = index
+    currentIndex = index;
     renderDialog(index);
-    return currentIndex;
+    return index;
 };
 
 
