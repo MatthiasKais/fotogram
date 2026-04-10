@@ -3,18 +3,18 @@ let currentIndex = 0;
 let imgNumber = 0;
 
 let myImagesNames = [
-    'brightfreak-stockholm-3897532',
-    'detait-fruit-8773085',
-    'jackmac34-portugal-3561087',
-    'jungr-death-valley-2314018',
-    'loggawiggler-badwater-4546',
-    'makalu-latvia-3725548',
-    'manniguttenberger-monument-valley-5499156',
-    'oljamu-yosemite-8177850',
-    'qimono-buddha-5410319',
-    'viarami-traffic-7033509',
-    'walkerssk-yosemite-valley-2053308',
-    'salofoto-dog-10187835'
+    'brightfreak-stockholm',
+    'detait-fruit',
+    'jackmac34-portugal',
+    'jungr-death-valley',
+    'loggawiggler-badwater',
+    'makalu-latvia',
+    'monument-valley',
+    'oljamu-yosemite',
+    'qimono-buddha',
+    'viarami-traffic',
+    'yosemite-valley',
+    'salofoto-dog'
 ];
 
 let myImages = [

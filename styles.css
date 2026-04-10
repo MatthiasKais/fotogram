@@ -87,7 +87,9 @@ footer {
 
 dialog {
   background-color: var(--midnight-dark-blue);
-  border: 0;
+  padding: 40px;
+  border: none !important;
+  outline: none !important;
 }
 
 h1 {
@@ -125,13 +127,13 @@ h1 {
   position: absolute;
   border: none;
   background-color: var(--midnight-blue);
-  border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius-xxlarge);
 
 }
 .dialog-img{
   aspect-ratio: 1/1;
   object-fit: cover;
-  max-width: 560px;
+  max-height: 300px;
 }
 
 dialog header{
@@ -143,10 +145,15 @@ dialog p{
   color: var(--white);
   font-family: var(--font-family);
   font-weight: 700;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-small);
 }
 
 dialog footer{
   display: flex;
   flex-direction: row;
+  gap: 50px;
+}
+
+dialog::backdrop {
+  background-color: var(--midnight-dark-blue-transparent);
 }
