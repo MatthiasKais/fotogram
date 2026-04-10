@@ -25,6 +25,10 @@ body {
   background-color: var(--midnight-dark-blue);
 }
 
+.article-header {
+  background-color: var(--midnight-dark-blue);
+}
+
 h1 {
   color: var(--white);
   font-family: var(--font-family);
