@@ -118,6 +118,12 @@ h1 {
 
 }
 
+.single-image:hover{
+  border: solid 2px;
+  border-color: var(--white);
+
+}
+
 .dialog-style{
   left: 0;
   right: 0;
