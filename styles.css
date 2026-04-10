@@ -76,6 +76,7 @@ footer {
 
 .header-content img {
   height: 40px;
+  margin-right: var(--spacing-xsmall);
 }
 
 .article-header-imgs {
@@ -107,7 +108,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: center;
   gap: var(--spacing-large);
-
+  padding: var(--spacing-medium);
 }
 
 .single-image{
