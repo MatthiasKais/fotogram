@@ -53,13 +53,15 @@ function render() {
 }
 
 function getNoteTemplate(index) {
-  return `<img class="single-image" onclick="openDialog(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}" tabindex="0">`;
+  return ` <button class="dialog-button-small" onclick="openDialog(${index})" tabindex="0">
+              <img class="single-image"  src="${myImages[index]}" alt="${myImagesNames[index]}"   >
+            </button> `;
 }
 
 function renderDialog(index) {
   let dialogRef = document.getElementById("dialogContent");
   let dialogImgName = document.getElementById("dialogImgName");
-  dialogRef.innerHTML = ""; // Empties the dialog -> Only actual clicked images is showen in the dialog
+  dialogRef.innerHTML = "";
   dialogImgName.innerHTML = "";
   dialogRef.innerHTML += getDialogTemplateImg(index);
   dialogImgName.innerHTML += getDialogTemplateImgName(index);
@@ -82,32 +84,20 @@ function filterButton(index, direction) {
   renderDialog(index);
   displayImgNumber(index);
   return index;
-}
-
-
+};
 
 function displayImgNumber(index) {
   index += 1;
   let actualImgNumber = document.getElementById("imgNumberOf");
   actualImgNumber.innerHTML = "";
   actualImgNumber.innerHTML += getTemplateImgNumber(index);
-}
+};
 
 function getTemplateImgNumber(index) {
   console.log(index);
   return ` <p> ${index}/12 </p> `;
-}
+};
 
 function getDialogTemplateImgName(index) {
-    return `<p> ${myImagesNames[index]} </p>`
-}
-
-document.addEventListener("keydown", (e) => {
-  const focusedElement = document.activeElement;
-  if (focusedElement.classList.contains("single-image") && (e.key === "Enter" || e.key === " ")) {
-    e.preventDefault();
-    const index = Array.from(focusedElement.parentNode.children).indexOf(focusedElement);
-    openDialog(index);
-  }
-});
-
+  return `<p> ${myImagesNames[index]} </p>`;
+};
