@@ -1,5 +1,6 @@
 const openImgRef = document.getElementById("openImg");
 const dialog = document.querySelector("dialog");
+
 let currentIndex = 0;
 let imgNumber = 0;
 
@@ -65,11 +66,7 @@ function renderDialog(index) {
 }
 
 function getDialogTemplateImg(index) {
-  return `
-  <button class="dialog-button" aria-label="${myImagesNames[index]}">
-    <img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">
-  </button>
-`;
+  return `<img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
 }
 
 function filterButtonRight(index) {
@@ -101,10 +98,20 @@ function displayImgNumber(index) {
 }
 
 function getTemplateImgNumber(index) {
-  return `<p> ${index}/12 </p>`;
+  console.log(index);
+  return ` <p> ${index}/12 </p> `;
 }
 
+function getDialogTemplateImgName(index) {
+    return `<p> ${myImagesNames[index]} </p>`
+}
 
-
-
+document.addEventListener("keydown", (e) => {
+  const focusedElement = document.activeElement;
+  if (focusedElement.classList.contains("single-image") && (e.key === "Enter" || e.key === " ")) {
+    e.preventDefault();
+    const index = Array.from(focusedElement.parentNode.children).indexOf(focusedElement);
+    openDialog(index);
+  }
+});
 
