@@ -52,7 +52,7 @@ function render() {
 };
 
 function getNoteTemplate(index) {
-    return `<img class="single-image" onclick="openDialog(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
+    return `<img class="single-image" onclick="openDialog(${index})" src="${myImages[index]}" alt="${myImagesNames[index]}" tabindex="0">`;
 };
 
 function renderDialog(index){
@@ -69,7 +69,7 @@ function getDialogTemplateImg(index) {
 };
 
 function getDialogTemplateImgName(index) {
-    return `<p> ${myImagesNames[index]} </p>`;
+    return `<p> ${myImagesNames[index]}  </p>`;
 
 };
 
