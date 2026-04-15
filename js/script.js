@@ -69,26 +69,22 @@ function getDialogTemplateImg(index) {
   return `<img class="dialog-img" src="${myImages[index]}" alt="${myImagesNames[index]}">`;
 }
 
-function filterButtonRight(index) {
-  index += 1;
-  if (index > 11) index = 0;
-  else index = index;
+function filterButton(index, direction) {
+  if (direction === "right") {
+    index += 1;
+    if (index > 11) index = 0;
+  } else if (direction === "left") {
+    index -= 1;
+    if (index < 0) index = 11;
+  }
+
   currentIndex = index;
   renderDialog(index);
   displayImgNumber(index);
   return index;
 }
 
-function filterButtonLeft(index) {
-  index -= 1;
 
-  if (index < 0) index = 11;
-  else index = index;
-  currentIndex = index;
-  renderDialog(index);
-  displayImgNumber(index);
-  return index;
-}
 
 function displayImgNumber(index) {
   index += 1;
