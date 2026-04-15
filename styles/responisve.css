@@ -1,11 +1,39 @@
 @media screen and (max-width: 768px) {
+  h1 {
+    font-size: var(--font-size-mxlarge);
+  }
+  .dialog-style {
+    padding: 20px;
+  }
 
-    h1 {
-        font-size: var(--font-size-mxlarge);
-    }
+  .dialog-img {
+    max-width: 300px;
+  }
 
-    header {
-        justify-content: center;
-    }
+  header {
+    justify-content: center;
+  }
 }
-    
+
+@media screen and (min-width: 425px) {
+  .header-content {
+    margin-top: var(--spacing-medium);
+    margin-bottom: var(--spacing-medium);
+    margin-left: var(--spacing-xxlarge);
+  }
+}
+
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: var(--font-size-mxlarge);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .single-image {
+    max-width: 150px;
+  }
+  main {
+    margin-top: 50px;
+  }
+}

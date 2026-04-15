@@ -6,11 +6,6 @@ header {
   background-color: var(--midnight-blue);
 }
 
-.header-content {
-  margin-top: var(--spacing-medium);
-  margin-bottom: var(--spacing-medium);
-  margin-left: var(--spacing-xxlarge);
-}
 
 main {
   flex: 1;
@@ -86,12 +81,6 @@ footer {
 
 }
 
-dialog {
-  background-color: var(--midnight-dark-blue);
-  padding: 40px;
-  border: none !important;
-  outline: none !important;
-}
 
 h1 {
   text-align: center;
@@ -135,12 +124,19 @@ h1 {
   border: none;
   background-color: var(--midnight-blue);
   border-radius: var(--border-radius-xxlarge);
-
+  padding: 40px;
 }
+
+dialog {
+  border: none !important;
+  outline: none !important;
+}
+
+
 .dialog-img{
   aspect-ratio: 1/1;
   object-fit: cover;
-  max-height: 300px;
+  max-width: 500px;
 }
 
 dialog header{

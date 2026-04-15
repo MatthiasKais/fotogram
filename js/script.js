@@ -1,4 +1,5 @@
 const openImgRef = document.getElementById("openImg");
+const dialog = document.querySelector("dialog");
 let currentIndex = 0;
 let imgNumber = 0;
 
@@ -41,7 +42,6 @@ function openDialog(index) {
 
 function closeDialog(){
     openImgRef.close();
-
 };
 
 function render() {
@@ -102,16 +102,20 @@ function displayImgNumber(index){
     index +=1; 
     let actualImgNumber = document.getElementById('imgNumberOf');
     actualImgNumber.innerHTML = "";
-    actualImgNumber.innerHTML += getTemplateImgNumber(index);
-
-    
-}
+    actualImgNumber.innerHTML += getTemplateImgNumber(index); 
+};
 
 function getTemplateImgNumber(index){
     return `<p> ${index}/12 </p>`
 
-}
+};
 
+dialog.addEventListener("click", (e) => {
+  // Only close if the click was directly on the dialog (backdrop)
+  if (e.target === e.currentTarget) {
+    dialog.close();
+  }
+});
 
 
 
