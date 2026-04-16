@@ -112,15 +112,6 @@ h1 {
   border-color: var(--midnight-blue);
   border-radius: var(--border-radius-small);
 }
-.single-image:hover,
-.single-image:focus {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  border: solid 2px;
-  border-color: var(--white);
-  border-radius: var(--border-radius-small);
-}
 
 .dialog-style{
   left: 0;
@@ -170,7 +161,8 @@ dialog::backdrop {
 }
 
 .dialog-button {
-  border: solid 2px transparent;
+  border: solid 2px;
+  border-color: transparent;
   border-radius: var(--border-radius-small);
   background-color: var(--midnight-blue);
   cursor: pointer;
@@ -184,13 +176,18 @@ dialog::backdrop {
 }
 
 .dialog-button-small {
-  /* border: solid 2px transparent; */
   all: unset;
   cursor: pointer;
   background-color: var(--midnight-dark-blue);
   cursor: pointer;
   width: 200px;
   height: 200px;
+  border: solid 2px transparent;
+  border-radius: var(--border-radius-small);
+}
+.dialog-button-small:hover,       
+.dialog-button-small:focus{
+  border-color: var(--white);
 }
 
 
