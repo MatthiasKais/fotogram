@@ -54,7 +54,7 @@ function render() {
 
 function getNoteTemplate(index) {
   return  ` <button class="dialog-button-small" onclick="openDialog(${index})" tabindex="0">
-              <img class="single-image"  src="${myImages[index]}" alt="${myImagesNames[index]}"   >
+              <img class="single-image"  src="${myImages[index]}" alt="${myImagesNames[index]}">
             </button> `
 }
 

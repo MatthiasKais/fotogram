@@ -15,12 +15,9 @@
 
   <body onload="render()">
     <header>
-      <div>
         <div class="header-content">
-          <img src="img/icon_fotogram.png" alt="Fotogram Logo" />
-          <img src="img/text_fotogram.png" alt="Fotogram" />
+          <img src="./img/Capa_1.svg" alt="Fotogram Logo">
         </div>
-      </div>
     </header>
 
     <main>
@@ -35,39 +32,42 @@
         <header class="header-dialog-img">
           <p id="dialogImgName"></p>
 
-          <input type="image" src="./img/x.svg" alt="Close Dialog" class="dialog-button" onclick="closeDialog()" > 
+          <input
+            type="image"
+            src="./img/x.svg"
+            alt="Close Dialog"
+            class="dialog-button"
+            onclick="closeDialog()"
+          />
         </header>
 
         <section>
           <div id="dialogContent"></div>
         </section>
 
-        <footer>
-          <button
-            class="dialog-button"
-            onclick="filterButton(currentIndex, 'left')"
-             tabindex="0"
-             title="Click for previous image"
-          >
-            <img
-              src="./img/Button_left.svg"
-              alt="Arrow left"
-             
-            />
-          </button>
-          <p id="imgNumberOf"></p>
-          <button
-            class="dialog-button"
-            onclick="filterButton(currentIndex, 'right')"
-            title="Click for next Image"
-            tabindex="0"
-          >
-            <img src="./img/Button_right.svg" alt="Arrow right" />
-          </button>
+        <footer >
+          <div class="footer-arrows">
+            <button
+              class="dialog-button"
+              onclick="filterButton(currentIndex, 'left')"
+              tabindex="0"
+              title="Click for previous image"
+              >
+              <img src="./img/Button_left.svg" alt="Arrow left" />
+            </button>
+              <p id="imgNumberOf"></p>
+            <button
+              class="dialog-button"
+              onclick="filterButton(currentIndex, 'right')"
+              title="Click for next Image"
+              tabindex="0"
+              >
+              <img src="./img/Button_right.svg" alt="Arrow right" />
+            </button>
+          </div>
         </footer>
       </dialog>
     </main>
-
     <footer>
       <div class="footer-content">
         <div>
@@ -88,4 +88,3 @@
     <script src="./js/script.js"></script>
   </body>
 </html>
-

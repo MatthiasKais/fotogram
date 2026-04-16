@@ -11,12 +11,12 @@
     height: 375px;
   }
 
-  header {
+  .header-content {
     justify-content: center;
   }
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 1024px) {
   .header-content {
     margin-top: var(--spacing-medium);
     margin-bottom: var(--spacing-medium);
