@@ -29,6 +29,8 @@ h1 {
   font-family: var(--font-family);
   font-weight: 800;
   font-size: var(--font-size-xxlarge);
+  padding-left:var(--spacing-large);
+  padding-right: var(--spacing-large);
 }
 
 footer {
@@ -89,6 +91,8 @@ h1 {
 .section-imgs {
   margin-top:var(--spacing-xxlarge);
   margin-bottom:var(--spacing-xxlarge);
+  padding-left:var(--spacing-large);
+  padding-right:var(--spacing-large);
 }
 
 .container-imgs{
@@ -101,9 +105,9 @@ h1 {
 }
 
 .single-image{
-  aspect-ratio: 1/1;
   object-fit: cover;
-  max-width: 200px;
+  width: 100%;
+  height: 100%;
   border-radius: var(--border-radius-small);
 
 }
@@ -128,9 +132,9 @@ dialog {
 
 
 .dialog-img{
-  aspect-ratio: 1/1;
   object-fit: cover;
-  max-width: 500px;
+  width: 500px;
+  height: 500px;
 }
 
 dialog header{
@@ -172,6 +176,8 @@ dialog::backdrop {
   background-color: var(--midnight-blue);
   all: unset;
   cursor: pointer;
+  width: 200px;
+      height: 200px;
 }
 
 .dialog-button-small:focus,
